@@ -1,0 +1,59 @@
+{% load static %}
+<html>
+	<head>
+		<title> Booking </title>
+	</head>
+	<body style="background: url('{% static 'logo.jpg' %}')">
+		<form style="font-size:25; margin:200px 400px 0px 400px; border:2px solid; border-radius:5px;" action="{% url 'saveenquiry'%}" method="post">
+			{% csrf_token %}
+			<h1 style="margin-left:200px;"> <u> Ticket Booking </u> </h1>
+			<div style="margin-left:50px;">
+			<label for="name">Train name:</label>
+  			<input type="text" id="name" name="Trainname">
+  			<label for="num" style="margin-left:20px;">Train number:</label>
+  			<input type="number" id="num" name="Trainnumber"> 
+			<br> <br>
+
+			<label for="fname">Full name:</label>
+  			<input type="text" id="fname" name="fname"><br> <br>
+			<label for="Age">Age:</label>
+  			<input type="number" id="Age" name="Age">
+			
+			<label for="gender" style="margin-left:100px;"> Gender :</label>   
+  			<input type="text" id="gender" name="gender"> <br> <br>
+			
+			 
+
+			
+			</div>		
+        
+			
+			<img src="{% static 'Discover-logo-e1416429693676.jpg' %}" style="height:80px; width:220px; margin:5px;">
+			<img src="{% static 'Visa_Inc._logo.svg.webp' %}" style="height:80px; width:220px;">
+			<img src="{% static '25637-6-credit-card-visa-and-master-card-transparent-image.png' %}" style="height:80px; width:220px;"><br><br>
+			
+
+		
+
+			<div style="margin-left:20px;">
+			<label for="cardno">Card number:</label>
+  			<input type="number" id="cardno" name="cardno"><br> <br>
+
+			<label for="cardholder">Card holder name:</label>
+  			<input type="text" id="cardholder" name="cardholder"><br><br>
+
+			<label for="fname">CVV:</label>
+  			<input type="number" id="fname" name="fname"><br><br>
+
+			<label for="fname">Exp month:</label>
+  			<input type="number" id="fname" name="fname">
+			<label for="fname">Exp year:</label>
+  			<input type="number" id="fname" name="fname"><br><br><br>
+			</div>
+			<a href="{% url 'successfull' %}">
+				<input type="button" value="Make Payment" onclick="" style="background-color:black; color:white; margin-left:50px; font-size:20; border-radius:5px;"><br> <br>
+			</a>
+	</form>
+
+	</body>
+</html>

@@ -1,0 +1,52 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{% static 'register.css' %}">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration </title>
+</head>
+<body style="background-image: url('{% static 'train.jpg' %}')">
+    <form action="" method="post">
+        {% csrf_token %}
+        <div id="container">
+            <div class="space">
+                <h1>Create your account</h1>
+            </div>
+            <div>
+                <input type="email" placeholder="Email" name="email" id="email">
+            </div>
+            <div class="error">
+                <p >Never shown to the public</p>
+            </div>
+            <div>
+                <input type="text" placeholder="Username" name="username" id="username">
+            </div>
+            <div class="error">
+                <p>Unique,no space, short</p>
+            </div>
+            <div>
+                <input type="password1" placeholder="Password" name="Password1" id="Password1">
+            </div>
+            <div class="error">
+                <p>at least 8 character</p>
+            </div>
+            <div>
+                <input type="password2" placeholder="Re-enter your Password" name="Password2" id="Password2">
+            </div>
+            <div class="error">
+                <p>atleast 8 character</p>
+            </div>
+            <div id="btn">
+                <button type="submit" > Create account</button>
+            </div>
+            <div class="footer">
+                <p>Already have an account ?<a href="/login">Login </a></p>
+            </div>
+        </div>
+    </form>
+   
+</body>
+</html>

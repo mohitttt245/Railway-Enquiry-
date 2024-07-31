@@ -1,0 +1,118 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>About project</title>
+	<style>
+		
+		p.mohit{
+			font-size:150%;text-align:justify; margin-left:40px;margin-right:40px;
+			}
+		ul.mohit{
+			font-size:150%;
+			}
+	</style>
+</head>
+<body style="margin:0px; background: url('{% static 'logo.jpg' %}')"> >
+	
+	<div style="border-bottom:2px solid;">
+    <p style="text-align: center; font-size:300%; font-style:italic; padding-top:20px; "><b>About Project</b></p>
+	</div>
+	
+	<div style="margin-top:-17px;">
+	<h2> MADE BY:- </h2>
+	<ul style="margin-left:140px; font-size:150%;">
+		<li> Sonu </li>
+		<li> Aaditya kumar </li>
+		<li> Mohit moond </li>
+		<li> Yash rai </li>
+	</ul>
+    
+    <h2> Project Description: -</h2>
+	
+    <p class="mohit">
+The Railway Enquiry System is a comprehensive web-based application built using the Django web 
+framework. It aims to provide users with a convenient and efficient way to inquire about train 
+schedules, ticket availability, and other relevant information related to railway travel. The system 
+serves as a one-stop solution for users to access real-time data, make reservations, and manage 
+their bookings, ensuring a seamless experience for both passengers and railway administrators.
+    </p>
+    <h2>Key Features:-</h2>
+    <ul class="mohit">
+        • User Registration and Authentication:<br>
+• Users can create new accounts, log in, and manage their profile information.<br>
+• Secure authentication mechanisms are implemented to protect user data.
+    </ul>
+    <p class="mohit">1. Train Enquiry: -</p>
+    <ul class="mohit">• Users can search for trains based on various criteria such as source, destination, date, 
+        and class.<br>
+        • The system provides real-time information on train schedules, seat availability, and fares.
+    </ul>
+    <p class="mohit">2. Ticket Booking:- </p>
+    <ul class="mohit">• Users can book tickets for their desired trains based on availability.<br>
+        • Multiple payment methods are integrated to facilitate secure transactions.
+    </ul>
+    <p class="mohit">3. Reservation Management: -</p>
+    <ul class="mohit">• Users can view and manage their booked tickets, including ticket cancellation and 
+        modification.<br>
+        • The system sends notifications and updates regarding ticket status and journey details.
+    </ul>
+    <p class="mohit">4. Seat Availability and Fare Enquiry: -</p>
+    <ul class="mohit">• Users can check seat availability and fare information for specific trains and classes.<br>
+        • This feature helps users plan their journey and make informed decisions.
+    </ul>
+    <p class="mohit">5. PNR Status Enquiry:-</p>
+    <ul class="mohit">• Users can check the status of their booked tickets using the PNR (Passenger Name 
+        Record) number.<br>
+        • The system provides real-time updates on ticket confirmation, seat allocation, and 
+        other details.
+    </ul>
+    <p class="mohit">6. Train Schedule and Route Information: -</p>
+    <ul class="mohit">• Users can access comprehensive information about train schedules, routes, and 
+        stoppages.<br>
+        • This feature assists users in planning their journeys and understanding train routes.
+    </ul>
+    <p class="mohit">7. Train and Station Information: -</p>
+    <ul class="mohit">• The system provides details about different trains, including their names, numbers, and 
+        types.<br>
+        • Users can also retrieve information about stations, including codes, names, and locations.</ul>
+     <p class="mohit">8. Admin Dashboard: -</p>
+     <ul class="mohit">• An admin dashboard provides administrative users with full control over the system.<br>
+        • Admins can manage train schedules, ticket availability, user accounts, payments, and 
+        site settings.
+        </ul>
+        <h2>Entities: -</h2>
+        <ul class="mohit">
+            <li>User</li>
+            <li>Train</li>
+            <li>Ticket</li>
+            <li>Reservation</li>
+            <li>Payment</li>
+            <li>Station</li>
+            <li>Admin</li>
+        </ul>
+        <h2>Relationships: -</h2>
+        <ul class="mohit">• User has a one-to-many relationship with Ticket and Reservation.<br>
+            • Train has a one-to-many relationship with Ticket and Reservation.<br>
+            • Ticket has a many-to-one relationship with User, Train, and Reservation.<br>
+            • Reservation has a many-to-one relationship with User, Train, and Ticket.<br>
+            • Payment has a one-to-one relationship with Ticket.<br>
+            • Station has a many-to-many relationship with Train.<br>
+            • Admin has full control over all entities.</ul>
+            <h2>Technologies Used: -</h2>
+            <ul class="mohit">• Django Web Framework<br>
+                • Python programming language<br>
+                • HTML, CSS, JavaScript for frontend development<br>
+                • Django for database management (e.g., SQLite, MySQL)<br>
+                • Django authentication system for user management<br>
+                • Payment gateway integration for secure transactions<br>
+                • Responsive web design principles for optimal user experience</ul>
+                <p class="mohit">The Railway Enquiry System aims to simplify and streamline the process of accessing railway 
+                    information, making reservations, and managing bookings. By leveraging the power of Django, the 
+                    project ensures efficient data management, secure transactions, and seamless user interactions. With a 
+                    user-friendly interface and a range of essential features, the Railway Enquiry System provides a reliable 
+                    platform for passengers to plan their journeys and administrators to efficiently manage railway 
+                    operations.</p>
+	</div>
+</body>
+</html>
